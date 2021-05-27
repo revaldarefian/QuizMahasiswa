@@ -1,6 +1,6 @@
 ﻿namespace MasterBarang018
 {
-    partial class Form1
+    partial class MasterBarang018
     {
         /// <summary>
         /// Required designer variable.
