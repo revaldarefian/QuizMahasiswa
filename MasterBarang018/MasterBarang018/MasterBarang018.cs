@@ -19,7 +19,7 @@ namespace MasterBarang018
         {
             InitializeComponent();
         }
-        DataClasses1DataContext db = new DataClasses1DataContext();
+        barangQDataContext db = new barangQDataContext();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -48,12 +48,32 @@ namespace MasterBarang018
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
+            int id = int.Parse(txtID.Text);
+            string barang = txtNamaBarang.Text;
+            int harga = int.Parse(txtHarga.Text);
+            int stock = int.Parse(txtStock.Text);
+            int col = int.Parse(cbSupp.Text);
 
+            var data = new tbl_barang
+            {
+                id_barang = id,
+                nama_barang = barang,
+                harga = harga,
+                stok = stock,
+                nama_supplier = col
+            };
+            db.tbl_barangs.InsertOnSubmit(data);
+            db.SubmitChanges();
+            MessageBox.Show("Sukses Menambahkan Barang");
+            txtNamaBarang.Clear();
+            txtHarga.Clear();
+            txtStock.Clear();
+            cbSupp.Items.Clear();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -84,7 +104,7 @@ namespace MasterBarang018
         private void MasterBarang018_Load(object sender, EventArgs e)
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select isnull(max (cast (id as int)),0) +1 from tbl_barang", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select isnull(max (cast (id_barang as int)),0) +1 from tbl_barang", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             txtID.Text = dt.Rows[0][0].ToString();         

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="barangQ">
+  <DataContextMoniker Name="/barangQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="39bbe5ef-4a49-4fc6-9a77-83327d8253b2" absoluteBounds="4.5, 2.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/barangQDataContext/tbl_barang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7fa26357-435a-485e-8bc4-3822ddbaedf4" absoluteBounds="4.515, 2.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
