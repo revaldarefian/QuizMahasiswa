@@ -39,7 +39,7 @@ namespace MasterBarang018
             pdftable.DefaultCell.BorderWidth = 1;
 
             iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
-
+        
             //header
             foreach (DataGridViewColumn column in dgw.Columns)
             {
