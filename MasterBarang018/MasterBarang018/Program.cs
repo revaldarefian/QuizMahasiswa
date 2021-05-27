@@ -16,7 +16,7 @@ namespace MasterBarang018
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MasterBarang018());
+            Application.Run(new Form1());
         }
     }
 }

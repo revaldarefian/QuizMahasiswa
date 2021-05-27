@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MasterBarang018
 {
-    public partial class MasterBarang018 : Form
+    public partial class Form1 : Form
     {
-        public MasterBarang018()
+        public Form1()
         {
             InitializeComponent();
         }
