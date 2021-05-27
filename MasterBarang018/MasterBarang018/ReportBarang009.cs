@@ -11,6 +11,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 
+
 namespace MasterBarang018
 {
     public partial class ReportBarang009 : Form
@@ -18,6 +19,11 @@ namespace MasterBarang018
         public ReportBarang009()
         {
             InitializeComponent();
+        }
+
+        private void ReportBarang009_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnPdf_Click(object sender, EventArgs e)
@@ -39,7 +45,7 @@ namespace MasterBarang018
             pdftable.DefaultCell.BorderWidth = 1;
 
             iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
-        
+
             //header
             foreach (DataGridViewColumn column in dgw.Columns)
             {
@@ -110,5 +116,6 @@ namespace MasterBarang018
             app.Quit();
 
         }
+
     }
 }
