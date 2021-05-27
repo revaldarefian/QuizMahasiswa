@@ -23,6 +23,8 @@ namespace MasterBarang018
 
         private void ReportBarang009_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quizMahasiswaDataSet.tbl_barang' table. You can move, or remove it, as needed.
+            this.tbl_barangTableAdapter.Fill(this.quizMahasiswaDataSet.tbl_barang);
 
         }
 
